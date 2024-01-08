@@ -3,8 +3,8 @@ from abstract_kalkulator import AbstractKalkulator
 
 
 # test pouziti:
-k : AbstractKalkulator = Kalkulator()
+kalkulator : AbstractKalkulator = Kalkulator()
 
-# toto nemente
-r = k.plus(2,3)
+# zde zavolejte více než jen jednu operaci, abyste ověřili funkčnost
+r = kalkulator.plus(2,3)
 print(f"2 plus 3 je {r}")
