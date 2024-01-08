@@ -1,9 +1,10 @@
+from dummy_wrapper import DummyWrapper
 from kalkulator import Kalkulator
 from abstract_kalkulator import AbstractKalkulator
 
 
 # test pouziti:
-kalkulator : AbstractKalkulator = Kalkulator()
+kalkulator : AbstractKalkulator = DummyWrapper(Kalkulator())
 
 # zde zavolejte více než jen jednu operaci, abyste ověřili funkčnost
 r = kalkulator.plus(2,3)
