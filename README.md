@@ -10,7 +10,7 @@ Naprogramujte wrapper, který bude:
 - v konstruktoru brát argument typu `AbstraktKalkulator`, který uloží do fieldu/pole `self._kalkulator`
 - musíte implementovat všechny metody `AbstraktKalkulator`:
   - jednoduše se jen provolejte skrz `self._kalkulator` na skutečnou implementaci
-- úpravou v main.py ověřte že to funguje, kulkulačku koonstruujte takto:
+- úpravou v `main.py` ověřte že to funguje, kulkulačku koonstruujte takto:
 
 ```
 kalkulator : AbstractKalkulator = KalkulatorWrapper(Kalkulator())
@@ -25,6 +25,7 @@ Naprogramujte tři různé wrappery.
 - jenom pomocí print vypiště co se provádí za operaci
 - následně delegujte na delegáta
 - před vrácením výsledku vypište jaký je výsledek
+- ověřte úpravou `main.py`
 
 ### Wrapper 2. - historie operací
 - složitější
@@ -34,6 +35,7 @@ Naprogramujte tři různé wrappery.
   - jaké byly operandy
   - jaký byl vrácený výsledek
 - uděláte navíc metodu, která vám vrátí uloženou historii operací
+- ověřte úpravou `main.py`
 - jde o **stavový wrapper**
 
 ### Wrapper 3. - cache
@@ -43,12 +45,15 @@ Naprogramujte tři různé wrappery.
   - podíváte se do cache, zda jste již dříve tuto operaci pro tyto operandy spočítali
   - pokud ano, vrátíte výsledek z cache
   - pokud ne, provoláte delegáta, výsledek operace do cache uložíte a pak ho vrátíte
+- ověřte úpravou `main.py`
 - jde o **stavový wrapper**
 
 ## Bonus :)
-Slepte wrappery tak aby kalkulačka uměla vše co jste vytvořili: logování, historie operací, cachování (a počítat samozřejmě).
+
+Slepte wrappery tak, aby kalkulačka uměla vše, co jste vytvořili: logování, historie operací, cachování (a počítat samozřejmě).
 - vrchní vrstva: historie operací
 - vrstva pod historií operací: cache
 - vrstva pod cachí: logování
 - vrstva pod logováním: kalkulačka
 
+Ověřte úpravou `main.py`.
