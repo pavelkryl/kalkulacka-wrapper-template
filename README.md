@@ -27,4 +27,12 @@ Naprogramujte tři různé wrappery.
 ### Wrapper 2. - historie operací
 - složitější
 - v tomto wrapperu budete potřebovat držet historii prováděných operací (nejlépe jako seznam)
+- při každé zavolené operaci si uložíte:
+  - jaká operace byla volaná
+  - jaké byly operandy
+  - jaký byl vrácený výsledek
+- uděláte navíc metodu, která vám vrátí uloženou historii operací
+
+### Wrapper 2. - historie operací
+- nejsložitější
 - 
