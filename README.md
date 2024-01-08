@@ -32,7 +32,21 @@ Naprogramujte tři různé wrappery.
   - jaké byly operandy
   - jaký byl vrácený výsledek
 - uděláte navíc metodu, která vám vrátí uloženou historii operací
+- jde o **stavový wrapper**
 
-### Wrapper 2. - historie operací
+### Wrapper 3. - cache
 - nejsložitější
-- 
+- v tomto wrapperu budete potřebovat držet cache prováděných operací (nejlépe jako mapu)
+- při každé zavolené operaci:
+  - podíváte se do cache, zda jste již dříve tuto operaci pro tyto operandy spočítali
+  - pokud ano, vrátíte výsledek z cache
+  - pokud ne, provoláte delegáta, výsledek operace do cache uložíte a pak ho vrátíte
+- jde o **stavový wrapper**
+
+## Bonus :)
+Slepte wrappery tak aby kalkulačka uměla vše co jste vytvořili: logování, historie operací, cachování (a počítat samozřejmě).
+- vrchní vrstva: historie operací
+- vrstva pod historií operací: cache
+- vrstva pod cachí: logování
+- vrstva pod logováním: kalkulačka
+
