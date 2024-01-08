@@ -1,5 +1,7 @@
 # Naprogramujte wrapper
 
+Budeme vylepšovat kalkulačku, která umí *jen* počítat. **Ale** nebudeme to dělat tím, že bychom modifikovali zdrojový kód kalkulačky, nýbrž obalováním kalkulačky novými vrstvami.
+
 # Krok 1.
 
 Naprogramujte wrapper, který bude:
