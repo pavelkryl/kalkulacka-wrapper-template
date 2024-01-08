@@ -6,9 +6,9 @@ Budeme vylepšovat kalkulačku, která umí *jen* počítat. **Ale** nebudeme to
 
 Naprogramujte wrapper, který bude:
 
-- implementovat: `AbstraktKalkulator`
-- v konstruktoru brát argument typu `AbstraktKalkulator`, který uloží do fieldu/pole `self._kalkulator`
-- musíte implementovat všechny metody `AbstraktKalkulator`:
+- implementovat: `AbstractKalkulator`
+- v konstruktoru brát argument typu `AbstractKalkulator`, který uloží do fieldu/pole `self._kalkulator`
+- musíte implementovat všechny metody `AbstractKalkulator`:
   - jednoduše se jen provolejte skrz `self._kalkulator` na skutečnou implementaci
 - úpravou v `main.py` ověřte že to funguje, kulkulačku koonstruujte takto:
 
